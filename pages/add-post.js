@@ -66,13 +66,20 @@ display: flex;
 justify-content: center;
 align-items: center;
 background: white;
+border-radius: 10px;
 `
 const Form = styled.form`
-
+border-radius: 15px;
+background: white;
+padding: 30px;
+max-width: 500px;
+width: 100%;
 `
 
 const InputField = styled.div`
-
+display: flex;
+flex-direction: column;
+margin-bottom: 15px;
 `
 
 const LabelText = styled.label`
@@ -81,17 +88,25 @@ margin-bottom: 10px;
 `
 
 const InputName = styled.input`
-
+width: 100%;
+display: flex;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 5px;
+outline: none;
+padding: 5px 10px
 `
 
 const InputText = styled.textarea`
-// border-bottom: 1px solid black;
-// outline: none;
-// padding: 5px;
-// border: none;
-// resize: none;
-// width: 200px;
-// height: 150px;
+width: 100%;
+display: flex;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+border-radius: 5px;
+outline: none;
+padding: 5px 10px
+resize: none;
+min-height: 150px;
 `
 
 const SubmitBtn = styled.button`
@@ -103,6 +118,7 @@ cursor: pointer;
 border-radius: 10px;
 border: none;
 outline: none;
+cursor: pointer;
 `
 
 export default AddPost;
